@@ -37,14 +37,12 @@ def autonomous_function():
 
     intake.spin_forward()
 
-    wait(1000, MSEC)
     reset_robot_position_and_heading_to_gps()
 
     trigger_mover.move(Position(-596, 1142))
     trigger_turner.turn(50, FRAME_ABSOLUTE)
     trigger_mover.move(Position(-389, 1315))
 
-    wait(1000, MSEC)
     reset_robot_position_and_heading_to_gps()
 
     trigger_turner.turn(330, FRAME_ABSOLUTE)
